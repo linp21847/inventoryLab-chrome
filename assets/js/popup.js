@@ -28,6 +28,23 @@
 					console.log(response);
 				});
 			});
+
+			$(document).keyup(function(e) {
+				var keys = [],
+					curKey = String.fromCharCode(e.which);
+
+				if (e.ctrlKey && (curKey === "b" || curKey === "B")) {
+					chrome.extension.sendMessage({
+						msg: "from-popup",
+						data: {
+							input1: input1,
+							input2: input2
+						}
+					}, function(response) {
+						console.log(response);
+					});
+				}
+			});
 		});
 
 	});
