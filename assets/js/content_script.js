@@ -60,7 +60,9 @@
 				curKey = String.fromCharCode(e.which);
 
 			if (e.ctrlKey && (curKey === "b" || curKey === "B")) {
-				fillInMSKU();
+				chrome.runtime.sendMessage({msg: "state"}, function(response) {
+					fillInMSKU(response);
+				});
 			}
 		})
 	});

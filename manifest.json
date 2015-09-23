@@ -34,7 +34,7 @@
             "/assets/js/content_script.js"
         ],
         "matches": [
-            "https://app.inventorylab.com/List/*"
+            "https://app.inventorylab.com/*"
         ]
     }],
     "options_page": "assets/html/options.html",
