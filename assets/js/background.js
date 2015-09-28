@@ -8,6 +8,7 @@
 				localStorage.setItem("input1", JSON.stringify(request.data.input1));
 				localStorage.setItem("input2", JSON.stringify(request.data.input2));
 				chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+					console.log(tabs);
 					chrome.tabs.sendMessage(tabs[0].id, {action: "fill-in", data: request.data}, function(response) {
 						console.log("Message arrived from current tab.");
 						console.log(response);

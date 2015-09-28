@@ -9,10 +9,10 @@
 
 		$(document).ready(function() {
 			$("#value1").val(val1).change(function(e) {
-				localStorage.setItem("input1", JSON.parse($(this).val()));
+				localStorage.setItem("input1", JSON.stringify($(this).val()));
 			});
 			$("#value2").val(val2).change(function(e) {
-				localStorage.setItem("input2", JSON.parse($(this).val()));
+				localStorage.setItem("input2", JSON.stringify($(this).val()));
 			});
 			$("#submit").click(function() {
 				var input1 = $("#value1").val(),
