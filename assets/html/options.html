@@ -1,9 +1,16 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
-<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+
+	<style>
+		#sortable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+		#sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+	</style>
 </head>
 <body id="options-body">
 	<div class="container" id="options">
@@ -22,6 +29,21 @@
 				<input placeholder="Press 'Ctrl + B' to fill the seller SKU" disabled type="text" id="hotkey" value="" class="form-control">
 			</div>
 		</div>
+
+		<ul id="sortable">
+			<li class="ui-state-default">1</li>
+			<li class="ui-state-default">2</li>
+			<li class="ui-state-default">3</li>
+			<li class="ui-state-default">4</li>
+			<li class="ui-state-default">5</li>
+			<li class="ui-state-default">6</li>
+			<li class="ui-state-default">7</li>
+			<li class="ui-state-default">8</li>
+			<li class="ui-state-default">9</li>
+			<li class="ui-state-default">10</li>
+			<li class="ui-state-default">11</li>
+			<li class="ui-state-default">12</li>
+		</ul>
 	</div>
 	<script src="../js/options.js"></script>
 </body>

@@ -64,6 +64,6 @@
 					fillInMSKU(response);
 				});
 			}
-		})
+		});
 	});
 })(window, $)
